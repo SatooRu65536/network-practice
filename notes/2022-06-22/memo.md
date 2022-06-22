@@ -77,7 +77,7 @@ server.listen(port, hostname, () => {
 **telnet からの通信**
 > telnet localhost 3000  
 > GET / HTTP/1.1
-```HTTP
+```
 HTTP/1.1 200 OK
 Content-Type: text/plain
 Date: Wed, 22 Jun 2022 02:02:32 GMT
@@ -200,12 +200,12 @@ console.log('localhostの3000番ポートでサーバー起動しています。
 
 **HTTP通信**
 * 流行った原因は通信内容がテキストだから
-```HTTP
+```
 [HTTPリクエスト]
 
 GET ##   HTTP/1.1
 ```
-```HTTP
+```
 [HTTPレスポンス]
 
 HTTP/1.1 200 OK
