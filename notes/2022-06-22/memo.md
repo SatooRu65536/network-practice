@@ -45,6 +45,7 @@ proxy = "http://192.168.150.219:8080/"
 ; Run `npm config ls -l` to show all defaults.
 ```
 このプロキシの設定方法は古く ’WARN’ がでる  
+<img src="./images/image2.png" width="60%">
 
 （前に追記されてるのがきになる）  
 （コマンドの実行順　`proxy` → `https-proxy`）
@@ -72,6 +73,8 @@ server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
+<img src="./images/image1.png" width="60%">
+
 <br>
 
 **telnet からの通信**
