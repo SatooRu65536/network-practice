@@ -5,8 +5,8 @@
 `ctrl + PrtSc` ubuntu
 
 ## VBにubuntuをインストールする
->VirtualBox[新規]  
-Ubuntu 64bit  
+VirtualBox [新規]  
+>Ubuntu 64bit  
 メモリ 8GB  
 HDD 20GB  
 VB-起動  
