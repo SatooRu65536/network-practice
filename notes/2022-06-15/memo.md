@@ -38,6 +38,8 @@ element.innerHTML
 console.log(‘text’)
 ```
 
+<br>
+
 ## 実際にやってみる
 
 index.html
@@ -108,6 +110,8 @@ element.value  // テキストボックスの値を取得
 element2.innerHTML = 'value'  // HTML要素に文字を表示
 ```
 
+<br>
+
 ## 数当てゲーム
 ☆頑張ったポイント
 * 無駄に乱数生成するときに範囲指定できるようにした
@@ -128,6 +132,7 @@ element2.innerHTML = 'value'  // HTML要素に文字を表示
 [リポジトリ](https://github.com/SatooRu65536/practice_site/www/)  
 [gitub-pages](https://satooru65536.github.io/practice_site/www/)  
 
+<br>
 
 ## メモ
 **おまじないは理解しよう！**  
@@ -180,7 +185,7 @@ PING 1.1.1.1 (1.1.1.1) type `Ctrl-C` to abort
                                                           seq=21 32bytes from 1.1.1.1: ttl=58 time=23.515ms
 ```
 
-
+<br>
 
 ## 感想
 JavaScriptはもともとよくやっていたが、関数の宣言方法があまりよくなかった。他は大体認識通りだったから作りながら理解するというスタンスでも問題なさそうだと思った。
