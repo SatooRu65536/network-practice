@@ -35,17 +35,8 @@ p {
     font-size: 200px;
 }
 
-#box {
-    width: 80%;
-    background-color: rgb(164, 108, 216);
-    border: solid 1px rgb(164, 108, 216);
-    padding: 1px;
-    padding-right: 5px;
-    margin: 0 auto;
-}
-
 #input {
-    width: 100%;
+    width: 80%;
     height: 80px;
     font-size: 60px;
     display: block;
@@ -55,11 +46,11 @@ p {
 }
 
 #btn {
-    width: 100%;
+    width: 80%;
     height: 30px;
     display: block;
     border-radius: 1;
-    padding: 1px;
+    padding: 0;
     margin: auto;
     color: white;
     background-color: rgb(164, 108, 216);
@@ -70,5 +61,5 @@ p {
     font-weight: bold;
     color: black;
     background-color: white;
-    border: 2px solid rgb(164, 108, 216);
+    border: 2px solid blueviolet;
 }
