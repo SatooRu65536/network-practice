@@ -5,7 +5,7 @@
 * ubuntuを複数台起動するにはメモリが足りないため使用
 * GUIが必要なら最低1GB、不要ならさらに減らせるがwebサーバー等は潤沢に
 
-<br><hr>
+<br>
 
 ## 仮想環境構築
 
@@ -19,7 +19,7 @@
    （LANケーブルを接続するような感じ）
 3. 起動後 ping で接続確認
 
-<br><hr>
+<br>
 
 ##  webサーバー構築 Nginx 
 > sudo apt update
@@ -43,7 +43,7 @@ html ファイル等を置くと表示される
 <img src="./images/image2.png" width="60%">
 <img src="./images/image1.png" width="60%">
 
-<br><hr>
+<br>
 
 ##  webサーバー
 * **Apache** と **Nginx**（エンジンエックス） などがある
@@ -57,7 +57,7 @@ html ファイル等を置くと表示される
 * WebページはHTMLだけではない  
 　→ CSS, JavaScript（ECMAscript）
 
-<br><hr>
+<br>
 
 ##  HTTP 
 * HTTP version3 は UDP をベースとした Quick を使用してる
@@ -68,7 +68,7 @@ html ファイル等を置くと表示される
 * HTTPは接続を維持しない
 　→ 状態の維持にはCoolieなどを使用
 
-<br><hr>
+<br>
 
 ## メモ
 ###  パイプ処理* grepコマンド 
@@ -76,7 +76,7 @@ html ファイル等を置くと表示される
     “ | ” は左のコマンドの結果を右に渡す
     “ grep ” 指定した文字を含む行のみ出力
 
-<br><hr>
+<br>
 
 ##  感想 
 kaliで遊んでいた時、metasploitに対してぺテストレーションをしてみようとしたが、ネットワークがうまく接続されず出来なかった。今回教わりながらやって見るととても簡単だと分かった。webサーバーはApache,Nginx,Node.jsを触った事があり、とてもスムーズにできたと思う。次回、写真の回転以外は。なぜ出来なかったのか確認する。
