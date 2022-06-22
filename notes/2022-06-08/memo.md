@@ -63,6 +63,7 @@
 > dig
 * DNSサーバーに名前解決を問い合わせる
 
+<br>
 
 ##  DNSサーバー構築
 * Unbound を使用する
@@ -131,7 +132,7 @@ interface: 192.168.111.0 → interface: 127.0.0.1
 14. 結果  
     ubuntu内ではできたがxubuntuからは出来なった
 
-
+<br>
 
 ##  参考
 [gihyo.jp](https://gihyo.jp/admin/serial/01/ubuntu-recipe/0386)  
@@ -140,6 +141,7 @@ interface: 192.168.111.0 → interface: 127.0.0.1
 [Qiita](https://qiita.com/umaxiaotian/items/b7f8f4866468d5c400b3)  
 [純規の暇人趣味ブログ](https://jyn.jp/unbound-internal-dns/#i-2)  
 
+<br>
 
 ##  メモ
 カーソルが取られた場合
@@ -148,6 +150,7 @@ interface: 192.168.111.0 → interface: 127.0.0.1
 ### 授業後に考えたこと
 systemd-resolveの停止と(14)をXubuntuでもやるべき？
 
+<br>
 
 ##  感想
 色々調べつつ試してみたが、調べても欲しい情報が出てこなく、授業時間では出来なかった。検索能力やネットワークに関する語彙力不足が主な原因だが、既にある情報から自分なりに柔軟に対応する能力も足りてないと思った。

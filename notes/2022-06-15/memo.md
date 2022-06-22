@@ -129,8 +129,8 @@ element2.innerHTML = 'value'  // HTML要素に文字を表示
 * ページ読み込み時の resset() 呼び出しもっといい書き方があるのではないか
 
 
-[リポジトリ](https://github.com/SatooRu65536/practice_site/www/)  
-[gitub-pages](https://satooru65536.github.io/practice_site/www/)  
+[リポジトリ](https://github.com/SatooRu65536/practice/www/)  
+[gitub-pages](https://satooru65536.github.io/practice/www/)  
 
 <br>
 

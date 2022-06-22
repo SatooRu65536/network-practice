@@ -27,6 +27,7 @@
 * 社内など固定の場合は手動の方がセキュリティ上良い
 * DHCPだとスイッチに勝手に繋いでも使用できる
 
+<br>
 
 ## サーバーアプリケーション
 * SSHはOpenSSHなど  
@@ -35,6 +36,7 @@
 * メールサーバーもある  
 　会社に依存していいなくリスク（障害・倒産等）に強い
 
+<br>
 
 ##  DHCPサーバー構築 
 * VBのネットワークで「DHCPのサポート」を切る  
@@ -95,6 +97,8 @@ IPアドレス
   [インフラエンジニアになりたくて](https://engineer-ninaritai.com/iscdhcpserver-config/)  
   [Server World](https://www.server-world.info/query?os=Ubuntu_20.04&p=dhcp&f=1)    
 
+<br>
+
 ##  メモ 
 > clear  
 
@@ -104,6 +108,7 @@ IPアドレス
 Google Public DNS  
 　8.8.8.8  , 8.8.4.4
 
+<br>
 
 ##  感想 
 DHCPはWiFiルーターにあるのでwebサーバーと違い、わざわざ構築するという考えはなかったが、DHCP”サーバー”なので構築するものだと思った。
