@@ -1,33 +1,28 @@
-const net = require('net');
-const moment = require('moment');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const server = net.createServer((socket) => {
-  console.log('クライアント接続 - from ' + socket.remoteAddress + ':' + socket.remotePort);
+app.use(express.urlencoded()) // URLエンコード機能の有効化
+app.use(express.json()) // JSON形式のデータ受付を行う
 
-  socket.on('close', () => {  // 通信終了したら実行する関数
-      console.log('通信終了 - from ' + socket.remoteAddress + ':' + socket.remotePort);
-  });
+app.get('/', (req, res) => {
+  res.set({'content-type': 'text/plain'})
+  res.send('Hello, World!!')
+})
 
-  socket.on('data', (data) => {  // dataにはクライアントからのデータ入ってきます。(※中身のデータをよく確認しましょう)
-    console.log('クライアントからのデータ: ' + data + ' from ' + socket.remoteAddress + ':' + socket.remotePort);
+app.get('/get-data', (req, res) => {
+     res.set({'content-type': 'application/json'})
+  res.send(`{"message": "hello,web api!!"}`)
+})
 
-    data = String(data);
-    console.log(data);
-    
-    if (data.match(/やあ/)) {
-        const datas = data.split(' ');
-        const currentTime = moment();
-        time = Number(currentTime.format("HH"));
-        
-        if (datas.length > 1 && datas[1].match(/[0-9]{2}/)) time = datas[1]
+app.post('/post-data', (req, res) => {
+  const data = req.body
+  console.log(data) // データの確認
 
-        if (time >= 18) socket.write('こんばんは');
-        else if (time >= 10) socket.write('こんにちは！');
-        else if (time >= 10) socket.write('おはよー！');
-        else socket.write('こんばんは')
-    }
-  });
+  res.set({'content-type': 'application/json'})
+  res.send(data) // 送られてきたデータをそのまま返す
+})
 
-}).listen(3000);
-
-console.log('localhostの3000番ポートでサーバー起動しています。');
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`)
+})
