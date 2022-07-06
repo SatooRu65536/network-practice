@@ -241,10 +241,12 @@ server {
 ```JavaScript
 // ボタンのイベント設定
 document.getElementById('btn').addEventListener('click', () => {
+    // APIデータ取得
     fetch(`http://localhost/api/get-data`)
         .then(response => {
             // console.log(response.status); // HTTPのステータスコード
             // console.log(response);
+            // 取得したデータを表示
             response.json().then((data) => {
                 // console.log(data);  // 取得されたレスポンスデータ
                 document.getElementById("message").innerHTML = data.message;
@@ -252,7 +254,7 @@ document.getElementById('btn').addEventListener('click', () => {
         });
 });
 ```
-APIから取得した情報をリロードなしで更新できる
+* APIから取得した情報をリロードなしで更新できる
 
 <br>
 
