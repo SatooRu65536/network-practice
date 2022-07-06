@@ -68,7 +68,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`)
 })
 ```
-* リクエストが来たら'Hello, World!!'と帰ってくる
+* リクエストが来たら'Hello, World!!'と帰ってくる  
 <image src="./images/pic-0.png" width="70%">
 
 <br>
@@ -93,7 +93,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`)
 })
 ```
-* 見つからないファイルを指定された場合は404を返す
+* 見つからないファイルを指定された場合は404を返す  
 <image src="./images/pic-0.png" width="70%">
 
 * すべて作るとコードが長くなる  
@@ -161,12 +161,10 @@ app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`)
 })
 ```
-* get, post メソットも判断できる
-
+* get, post メソットも判断できる  
 <image src="./images/express-0.png" width="70%">
 
-* 'http://localhost:3000/' ->テキストとして送信される
-
+* 'http://localhost:3000/' ->テキストとして送信される  
 <image src="./images/express-2.png" width="70%">
 
 * 'http://localhost:3000/get-data' -> jsonとして送信される
@@ -225,20 +223,48 @@ server {
   ...
 }
 ```
+* /api/ にアクセスされたら proxy_pass に飛ばす
+* この働きをリバースプロキシという
 
-'127.0.0.1/' にアクセス
+'127.0.0.1/' にアクセス  
 <image src="./images/nginx_to_node-1.png" width="70%">
 
 * NginxがHTMLを返す
 
-'127.0.0.1/api/' にアクセス
+'127.0.0.1/api/' にアクセス  
 <image src="./images/nginx_to_node-0.png" width="70%">
 
 * NodeがNginx経由で受け取って返す
 
+<br>
+
+```JavaScript
+// ボタンのイベント設定
+document.getElementById('btn').addEventListener('click', () => {
+    fetch(`http://localhost/api/get-data`)
+        .then(response => {
+            // console.log(response.status); // HTTPのステータスコード
+            // console.log(response);
+            response.json().then((data) => {
+                // console.log(data);  // 取得されたレスポンスデータ
+                document.getElementById("message").innerHTML = data.message;
+            });
+        });
+});
+```
+APIから取得した情報をリロードなしで更新できる
+
+<br>
+
+---
+
 ## Ajax
 埋め込んだjs内から取得する  
 -> リアルタイムで画面を更新できる
+
+## 同一生成ポリシー
+* JS でクライアントから他のサーバーにアクセスできない
+* サーバーが他のサーバーから受け取ってクライアントに返せば実現できてしまう
 
 
 <br>
@@ -250,6 +276,10 @@ server {
 - [ ] Ajax
 
 * Ajax は React とか Vue とかそこら辺だと思っていたが違いそう
+* 失敗を繰り返すこと
+* 自分のやって来たことを可視化しよう
+* チャンスを逃さないために勉強しよう
+* 人に仕事を振れるように
 
 <br>
 
