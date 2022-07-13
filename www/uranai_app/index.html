@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>占いアプリ</title>
+  <style>
+    .name-error {
+      color: red;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>今日の運勢を占いましょう</h1>
+
+    <form id="form1">
+      <div>
+        <label for="name">名前を入力してください</label>
+        <input type="text" id="name" name="name">
+        <span class="name-error"><!-- 入力に不備がある場合に、ここにエラーメッセージを表示させます --></span>
+      </div>
+      <div>
+        <button id="do_uranai">占う</button>
+      </div>
+    </form>
+    <div id="response">
+      <!-- 結果を表示するエリア -->
+    </div>
+  </main>
+</body>
+</html>
