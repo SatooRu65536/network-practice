@@ -11,5 +11,8 @@
 ## node
 node.jsを用いたプロジェクトファイル
 
+## uranai_api
+node.jsを用いた占いのAPI側
+
 ## www
 Nginx を用いたwebサーバー用のフォルダ
