@@ -29,5 +29,25 @@ for (let i=0; i<data.name.length; i++) {
 （翌日は前日+1 の値となるため）  
 -> 日付をシード値とした乱数を足す
 
+<img src="./images/s5.png" width="40%">
+<img src="./images/s6.png" width="40%">
+
+<br>
+
+完成!
+
+<img src="./images/s7.png" width="40%">
+<img src="./images/s8.png" width="40%">
+
+
+## オリジナルアプリ
+[挨拶くん](../2022-06-15/memo.md) をつくる
+
+
+###  メモ
+* **おすすめ書籍**  
+プロフェッショナルIPv6
+* 図書館を活用しよう
+
 ### 参考
 [シード値から乱数を生成](http://dotnsf.blog.jp/archives/1080312090.html)
