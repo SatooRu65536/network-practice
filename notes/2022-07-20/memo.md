@@ -133,7 +133,7 @@ window.onload = () => {
 
 > P.S.  
 ノートまとめる気力が無かったのでめっちゃ応援してくれるソフト作りました。
-**[動画](./images/m1.mov)**
+https://user-images.githubusercontent.com/87361015/180658355-7577177b-ee06-4e8a-9eb0-a8297b729b60.mov
 
 <br>
 
