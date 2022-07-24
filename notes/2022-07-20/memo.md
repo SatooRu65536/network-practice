@@ -1,7 +1,7 @@
 # 第9回 NET分野実習　2022年7月20日
 
 ## オリジナルアプリ
-[挨拶くん](../2022-06-15/memo.md) をつくる
+[数当てゲーム](../2022-06-15/memo.md) をつくる
 
 1. node.jsの設定追加
 ```text
@@ -53,14 +53,14 @@ window.onload = () => {
 問題点を探す
 * `localhost` と `127.0.0.1` が混ざってる  
 -> そんなことない
-* サーバーの設定ミス
+* サーバーの設定ミス  
 -> 多分あってる
-* uranai_app で試す
+* uranai_app で試す  
 -> 普通にできた  
 
 ...うーん
 
-💡あれ、URLがうらないと違う...?  
+💡あれ、URLが`うらない`と違う...?  
 うらない -> `localhosst/uranai_app/`  
 数字当て -> `localhost:5500/www/guess_number_app_`  
 
@@ -101,8 +101,13 @@ window.onload = () => {
     })
 }
 ```
-今後実装予定だったモード設定を送信するようにした  
--> エラー消えず。予想と違ったからちゃんとエラーの意味調べた
+今後実装予定だったモード設定を送信するようにした
+```JavaScript
+...
+ body: JSON.stringify('{"mode": "easy"}'),
+...
+```
+-> エラー消えず。ちゃんとエラーの意味調べた
 
 > エラーメッセージ  
 > SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
@@ -114,6 +119,14 @@ window.onload = () => {
 -> VScode の探せる機能使ったけどなし。。  
 （でもブラウザのターミナルからエラー吐いてるから原因はクライアント側...?）
 
+<br>
+
+### 一学期編 FIN
+
+### next > 「夏休み編」
+> ~~Nginx用意しなきゃできなくね...~~
+
+<br>
 
 
 ###  メモ
