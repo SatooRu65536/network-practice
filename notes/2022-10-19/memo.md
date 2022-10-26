@@ -48,7 +48,7 @@ pip freeze > requirements.txt
 ```
 
 ### 実際に書いてみよう
-- [ソースコード](../../python_ws/)
+- [ソースコード](./python_ws/)
 
 
 コメントは `#`  
