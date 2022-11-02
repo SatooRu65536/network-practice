@@ -12,7 +12,7 @@ VirtualBox [新規]
 メモリ 8GB  
 HDD 20GB  
 VB-起動  
-<img src="./images/image1.png" width="40%">  
+<img src="./images/image1.png" width="600">  
 
 **proxyに弾かれる（学校等）**
 1. proxyの設定を行う

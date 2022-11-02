@@ -57,7 +57,7 @@
 > whois
 * ドメインの所有者情報等を表示してくれる  
   （サイトもある）  
-  <img src="./images/image5.png" width="60%">
+  <img src="./images/image5.png" width="600">
 
 > nslookup
 > dig
@@ -73,7 +73,7 @@
    > sudo apt install unbound
 
 2. /etc/unbound/unbound.conf.d/unbound.conf を編集
-   <img src="./images/image1.png" width="60%">
+   <img src="./images/image1.png" width="600">
 
 3. unbound 再起動
    > sudo service unbound restart  
@@ -95,7 +95,7 @@
    > dig xubuntu.nagi.pg  
    
    → エラー  
-   <img src="./images/image3.png" width="60%">
+   <img src="./images/image3.png" width="600">
 
 8. (4)を一部変更
 interface: 192.168.111.0 → interface: 127.0.0.1

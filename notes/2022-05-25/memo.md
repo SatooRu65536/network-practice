@@ -13,8 +13,8 @@
    できなければ ”ガイド付きモード” で実行
 1. ネットワーク生成  
    [環境設定] → [ネットワーク]  
-   <img src="./images/image4.png" width="40%">
-   <img src="./images/image3.png" width="40%">
+   <img src="./images/image4.png" width="600">
+   <img src="./images/image3.png" width="600">
 2. それぞれのPCにネットワークを設定  
    （LANケーブルを接続するような感じ）
 3. 起動後 ping で接続確認
@@ -40,8 +40,8 @@ Nginx を起動（localhost で見れれば完了: 写真）
 
 html ファイル等を置くと表示される
 
-<img src="./images/image2.png" width="60%">
-<img src="./images/image1.png" width="60%">
+<img src="./images/image2.png" width="600">
+<img src="./images/image1.png" width="600">
 
 <br>
 

@@ -55,9 +55,9 @@ L1 はあくまでも電気的な接続
   
 Macアドレスの確認方法  
 ```getmac```  
-<img src="./images/image3.png" width="60%">  
+<img src="./images/image3.png" width="600">  
 ``ipconfig /all``  
-<img src="./images/image2.png" width="60%">
+<img src="./images/image2.png" width="600">
 
 **IEEE 802.3**  
 Ethernet
@@ -99,7 +99,7 @@ LAN内のアドレス
 → NAT（一般家庭はルーターが担っている）
 * プライベートとグローバルで使える範囲が”原則”決まっている
 
-<img src="./images/image4.png" width="60%">
+<img src="./images/image4.png" width="600">
 
 **サブネットマスク**  
 ```
@@ -119,7 +119,7 @@ LAN内のアドレス
 
 * ネットワークアダプターを追加（有線）  
 
-<img src="./images/image9.png" width="60%">
+<img src="./images/image9.png" width="600">
 
 > ip addres　(ip a)
 
@@ -134,7 +134,7 @@ LAN内のアドレス
 　“ 3 “
 　　windows の場合、他の端末と自動で接続？
 ```
-<img src="./images/image7.png" width="60%">
+<img src="./images/image7.png" width="600">
 
 今回はあくまでもLAN内
 
@@ -152,7 +152,7 @@ IPアドレスを決める
 > ping [ IPアドレス ]
 
 接続の確認ができる
-<img src="./images/image1.png" width="40%">
+<img src="./images/image1.png" width="600">
 
 <br>
 
@@ -161,7 +161,7 @@ IPアドレスを決める
 > arp -a  
 > ip neigh  
 
-<img src="./images/image8.png" width="60%">
+<img src="./images/image8.png" width="600">
 
 Macアドレスブロートキャスト  
 → 繋がっている全てのPCに送信し返ってくることで接続確立

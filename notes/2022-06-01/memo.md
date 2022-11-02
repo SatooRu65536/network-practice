@@ -40,7 +40,7 @@
 
 ##  DHCPサーバー構築 
 * VBのネットワークで「DHCPのサポート」を切る  
-<img src="./images/image3.png" width="60%">
+<img src="./images/image3.png" width="600">
 
 （今回は isc-dhcp-server を使用する）  
 IPアドレス  
@@ -60,7 +60,7 @@ IPアドレス
    option domain-name-servers - DNSサーバーを指定
    （8.8.8.8 Googleを使用）
    ```
-   <img src="./images/image2.png" width="60%">
+   <img src="./images/image2.png" width="600">
 3. isc-dhcp-server を再起動  
    > /etc/init.d/isc-dhcp-server restart
 4. 確認  
@@ -70,7 +70,7 @@ IPアドレス
    → 設定確認（DHCPを使用→OK）
    → DHCPサーバーの問題？
    ```
-   <img src="./images/image1.png" width="60%">
+   <img src="./images/image1.png" width="600">
 5. 追記  
    ```
    authoritative;　コメントアウト削除
@@ -84,7 +84,7 @@ IPアドレス
 8. デバッグ
    > dhcpd -t -cf /etc/dhcp/dhcpd.conf
    
-   <img src="./images/image4.png" width="60%">  
+   <img src="./images/image4.png" width="600">  
 
    （2 の range がおかしいよ！）  
    192.168.1.253 → 192.168.111.253 に修正

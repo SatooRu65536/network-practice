@@ -65,7 +65,7 @@ server.listen(port, hostname, () => {
 })
 ```
 * リクエストが来たら'Hello, World!!'と帰ってくる  
-<image src="./images/pic-0.png" width="70%">
+<image src="./images/pic-0.png" width="600">
 
 <br>
 
@@ -90,7 +90,7 @@ server.listen(port, hostname, () => {
 })
 ```
 * 見つからないファイルを指定された場合は404を返す  
-<image src="./images/pic-0.png" width="70%">
+<image src="./images/pic-0.png" width="600">
 
 * すべて作るとコードが長くなる  
 -> ライブラリを使おう
@@ -158,10 +158,10 @@ app.listen(port, () => {
 })
 ```
 * get, post メソットも判断できる  
-<image src="./images/express-0.png" width="70%">
+<image src="./images/express-0.png" width="600">
 
 * 'http://localhost:3000/' ->テキストとして送信される  
-<image src="./images/express-2.png" width="70%">
+<image src="./images/express-2.png" width="600">
 
 * 'http://localhost:3000/get-data' -> jsonとして送信される
 
@@ -221,12 +221,12 @@ server {
 * この働きをリバースプロキシという
 
 '127.0.0.1/' にアクセス  
-<image src="./images/nginx_to_node-1.png" width="70%">
+<image src="./images/nginx_to_node-1.png" width="600">
 
 * NginxがHTMLを返す
 
 '127.0.0.1/api/' にアクセス  
-<image src="./images/nginx_to_node-0.png" width="70%">
+<image src="./images/nginx_to_node-0.png" width="600">
 
 * NodeがNginx経由で受け取って返す
 

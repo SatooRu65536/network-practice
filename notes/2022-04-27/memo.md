@@ -133,7 +133,7 @@ N. ケーブルの確認
 * いつまで続くかはわからない。あくまでも現在使っているだけ  
 　TCPが QUICK（Googleが開発）にかわる可能性も
 
-<img src="./images/image1.png" width="80%">
+<img src="./images/image1.png" width="600">
 
 <br>
 
