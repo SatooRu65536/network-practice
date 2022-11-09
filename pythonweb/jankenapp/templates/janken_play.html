@@ -24,31 +24,56 @@
                 {% else %}
                 <img src="{{ url_for('static', filename='mark_batsu.png') }}" alt="Batsu" width="150">
                 {% endif %}
-                <figcaption>
-                    {{ name }}
-                </figcaption>
+                <figcaption>{{ name }}</figcaption>
             </figure>
             <figure>
                 {% if cpu == "rock" %}
-                <img src="{{ url_for('static', filename='janken_gu.png') }}" alt="Rock" width="150">
+                <img id="cpu_hand" src="{{ url_for('static', filename='janken_gu.png') }}" alt="Rock" width="150">
                 {% elif cpu == "scissor" %}
-                <img src="{{ url_for('static', filename='janken_choki.png') }}" alt="Scissor" width="150">
+                <img id="cpu_hand" src="{{ url_for('static', filename='janken_choki.png') }}" alt="Scissor" width="150">
                 {% elif cpu == "paper" %}
-                <img src="{{ url_for('static', filename='janken_pa.png') }}" alt="Paper" width="150">
+                <img id="cpu_hand" src="{{ url_for('static', filename='janken_pa.png') }}" alt="Paper" width="150">
                 {% elif cpu == "saikyou" %}
-                <img src="{{ url_for('static', filename='saikyou.png') }}" alt="Saikyou" width="150">
+                <img id="cpu_hand" src="{{ url_for('static', filename='saikyou.png') }}" alt="Saikyou" width="150">
                 {% else %}
-                <img src="{{ url_for('static', filename='mark_batsu.png') }}" alt="Batsu" width="150">
+                <img id="cpu_hand" src="{{ url_for('static', filename='mark_batsu.png') }}" alt="Batsu" width="150">
                 {% endif %}
-                <figcaption>
+                <figcaption id="me">
+                    {% if conjecture %}
+                    わたくし
+                    {% else %}
                     CPU
+                    {% endif %}
                 </figcaption>
             </figure>
         </section>
-        <h2>{{ result_message }}</h2>
-        <button onclick="javascript:location.href='/janken'">戻る
-        </button>
+        <h2 id="message">{{ result_message }}</h2>
+        <button onclick="javascript:location.href='/janken'">戻る</button>
     </main>
 </body>
+
+{% if conjecture %}
+<script text="javascript">
+    window.onload = () => {
+        const cpu_hand = document.getElementById('cpu_hand');
+        const me = document.getElementById('me');
+        const message = document.getElementById('message');
+
+        setTimeout(() => {
+            message.style.fontSize = '0.6rem';
+            message.innerText = 'あっ...';
+        }, 1000);
+
+        setTimeout(() => {
+            message.innerText = '{{ conjecture }}';
+            message.style.fontWeight = 'bold';
+            message.style.fontSize = '2rem';
+            cpu_hand.setAttribute('src', '/static/{{ winhand }}');
+            cpu_hand.style.width = '100px';
+            me.style.fontSize = '0.5rem';
+        }, 3000);
+    }
+</script>
+{% endif %}
 
 </html>
