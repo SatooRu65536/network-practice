@@ -46,6 +46,7 @@
 
 
 ## webAPIを作る
+[/addressbook](../../addressbook/)
 - リクエストに対して HTML/CSS を返していた
   - 別に HTML でなくてもいい
   - JS による 非同期処理
