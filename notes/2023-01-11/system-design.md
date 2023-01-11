@@ -116,6 +116,11 @@
   - ファイルのパスを取得
 - binascii
   - カードの RFID を文字列に変換
+### 使用shellコマンド
+- cron
+  - プログラムを定期実行するため
+- mpg321
+  - mp3 を再生するため
 ### 使用サービス/API
 - Google スプレッドシート
 - Google Drive API
